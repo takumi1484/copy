@@ -2,7 +2,8 @@
 /*↓ヘッダー、フッター固定*/
 body{
     margin: 0;
-    padding: 120px 0 50px 0;
+    padding: 100px 0 50px 0;
+    overflow-x: hidden;
 }
 
 * html body{
@@ -174,19 +175,30 @@ li{
 }
 
 
-
-
-.eff-1{
-    width:100%;
-    height:100%;
-    right:100%;
-    background:#34495e;
-    position:absolute;
-    transition:all .5s ease;
-    z-index:1;
+.example {
+    position: relative;
 }
 
+.example a {/*aタグを画像の真ん中に*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*以下装飾*/
+    margin:0;/*余計な隙間を除く*/
+    font-size: 20px;/*文字サイズ*/
+    border: solid white 2px; /*線で囲う*/
+    padding: 7px;/*文字と線の間の余白*/
+    color: white;/*文字色*/
+    text-decoration: none;/*下線を表示させない*/
+}
 
-.button-1:active .eff-1{
-    right:0;
+.example a:hover{/*カーソルを当てたとき*/
+    background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+}
+
+.example img {
+    width: 100%;
 }
