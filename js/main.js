@@ -32,3 +32,7 @@ window.onload = function(){
         }
     }, 20);
 }
+
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
