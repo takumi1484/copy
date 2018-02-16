@@ -104,6 +104,89 @@ li{
 .ham-menua {
     transform: translateY(900px); /*メニュー横幅①と合わせる*/
 }
+.ham-bgb {
+
+}
+.ham-bga {
+    opacity: 0.5; /*黒背景部分透過度*/
+    z-index: 999;
+    background-color: #333; /*黒背景部分背景色*/
+    display: block;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+    width: 100%;
+}
 /*ハンバーガー終*/
+.body1{
+    width:100%;
+    height:100%;
+    left:100%;
+    top:0;
+    background:#34495e;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:9999;
+}
+.body2{
+    left:0;
+}
+.body3{
+    width:100%;
+    height:100%;
+    left:100%;
+    top:0;
+    background: #fff;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:999999;
+}
+.body4{
+    left:0;
+}
+.to1{
+    width:100%;
+    height:100%;
+    right:0;
+    top:0;
+    background:#34495e;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:9999;
+}
+.to2{
+    right:100%;
+}
+.to3{
+    width:100%;
+    height:100%;
+    right:0;
+    top:0;
+    background:#fff;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:999999;
+}
+.to4{
+    right:100%;
+}
 
 
+
+
+.eff-1{
+    width:100%;
+    height:100%;
+    right:100%;
+    background:#34495e;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+}
+
+
+.button-1:active .eff-1{
+    right:0;
+}
