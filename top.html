@@ -9,30 +9,42 @@
     <script type="text/javascript">
     $(function(){
         var togglecontroll = 2;
-        $(".ham-menu").click(function(){
-            if(togglecontroll%2 === 0){
-            $(".ham-menu").toggleClass("ct1");
-            $(".menu-background").toggleClass("ct2");
-            togglecontroll += 1;
-            }
+        $(".menu-trigger").click(function(){
+            $(".ham1b").toggleClass("ham1a");
+            $(".ham2b").toggleClass("ham2a");
+            $(".ham3b").toggleClass("ham3a");
         });
-        $(".menu-background").click(function(){
-            if(togglecontroll%2 !== 0){
-                $(".ham-menu").toggleClass("ct1");
-                $(".menu-background").toggleClass("ct2");
-                togglecontroll += 1;
-            }
+    });
+    $(function(){
+        $(".menu-trigger").click(function(){
+                $(".ham-menub").toggleClass("ham-menua");
         });
     });
 </script>
 
 </head>
 <body>
-
 <div id="headerArea">   <!--↓ヘッダー-->
     <div class="title">
         my page
     </div>
+
+    <a class="menu-trigger" href="#">
+        <span class="ham1b"></span>
+        <span class="ham2b"></span>
+        <span class="ham3b"></span>
+    </a>
+
+    <div class="ham-menub">
+        <ul>
+            <li>メニュー1</li>
+            <li>メニュー2</li>
+            <li>メニュー3</li>
+        </ul>
+    </div>
+    <div class="menu-background"></div>
+
+
 </div>                     <!--↑ヘッダー-->
 
 
