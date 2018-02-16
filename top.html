@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<br>
+<head>
+    <meta charset="utf-8">
+    <title>intr</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var togglecontroll = 2;
+        $(".ham-menu").click(function(){
+            if(togglecontroll%2 === 0){
+            $(".ham-menu").toggleClass("ct1");
+            $(".menu-background").toggleClass("ct2");
+            togglecontroll += 1;
+            }
+        });
+        $(".menu-background").click(function(){
+            if(togglecontroll%2 !== 0){
+                $(".ham-menu").toggleClass("ct1");
+                $(".menu-background").toggleClass("ct2");
+                togglecontroll += 1;
+            }
+        });
+    });
+</script>
+
+</head>
+<body>
+
+<div id="headerArea">   <!--↓ヘッダー-->
+    <div class="title">
+        my page
+    </div>
+</div>                     <!--↑ヘッダー-->
+
+
+
+</div>
+
+</body>
+</html>
