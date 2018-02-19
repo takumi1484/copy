@@ -36,3 +36,6 @@ window.onload = function(){
 $(window).on('touchmove.noScroll', function(e) {
     e.preventDefault();
 });
+
+
+document.write("screen.width " + screen.width + "、" + "screen.height " + screen.height);
