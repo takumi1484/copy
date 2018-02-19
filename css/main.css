@@ -236,3 +236,9 @@ li{
 .example img {
     width: 100%;
 }
+
+.subbody{
+    padding: 10px 5px 5px 5px;
+    margin: -10px 20px 0 20px;
+    background: rgba(52, 73, 94, 0.2);
+}
