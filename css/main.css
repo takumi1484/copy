@@ -244,6 +244,23 @@ li{
     background: rgba(52, 73, 94, 0.2);
 }
 
+.subbody1{
+    padding: 10px 10px 5px 10px;
+    margin: 0px 20px 0 20px;
+    background: rgba(52, 73, 94, 0.2);
+}
+
+.subbody1 b{
+    border-bottom: solid #e09d18 6px;
+    font-size: 20px;
+    color: #e09d18;
+    float: left;
+    margin-top: 26px;
+    margin-left: 20px;
+}
+.subbody1 h1{
+    margin-left: 40px;
+}
 
 
 /* ボタンの大きさと位置をここで指定 */
@@ -285,3 +302,5 @@ li{
     0% {top:-80px;}
     100% {top:80px;}
 }
+
+
