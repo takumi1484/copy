@@ -28,9 +28,6 @@ div#headerArea {
      overflow: auto;
  }
 /*↑ヘッダー、フッター固定*/
-
-/*↓右メニュー*/
-
 .title{/*ロゴ*/
     position: absolute;
     top: 6px;
@@ -41,6 +38,7 @@ div#headerArea {
     1px -1px 0px #000000,
     -1px -1px 0px #000000;
 }
+/*↓右メニュー*/
 /*ハンバーガー*/
 .menu-trigger,
 .menu-trigger span {
@@ -91,7 +89,7 @@ div#headerArea {
     background-color: #fff; /*メニュー背景色*/
     box-sizing: border-box;
     height: 900px;
-    padding: 50px 0px 0px 20px; /*メニュー内部上下左右余白*/
+    padding: 10% 5% 0px 20px; /*メニュー内部上下左右余白*/
     position: fixed;
     top: -900px; /*メニュー横幅①と合わせる*/
     transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
@@ -102,6 +100,10 @@ div#headerArea {
 li{
     color: black;
     list-style:none;
+    font-family: "Franklin Gothic Book";
+    font-size: 40px;
+    padding: 20px;
+    text-transform: uppercase;
 }
 
 .ham-menua {
@@ -197,6 +199,7 @@ li{
     color: white;/*文字色*/
     text-decoration: none;/*下線を表示させない*/
     background: rgba(52, 73, 94, 0.9);
+    cursor: pointer;
 }
 .example h1 {
     position: absolute;
