@@ -1,5 +1,6 @@
 html{
     overflow-x: hidden;
+    background: rgba(197, 237, 255, 0.13);
 }
 /*↓ヘッダー、フッター固定*/
 body{
@@ -238,7 +239,7 @@ li{
 }
 
 .subbody{
-    padding: 10px 5px 5px 5px;
+    padding: 10px 10px 5px 10px;
     margin: -10px 20px 0 20px;
     background: rgba(52, 73, 94, 0.2);
 }
