@@ -243,3 +243,45 @@ li{
     margin: -10px 20px 0 20px;
     background: rgba(52, 73, 94, 0.2);
 }
+
+
+
+/* ボタンの大きさと位置をここで指定 */
+.btn__box {
+    position: relative;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 0 0 0 16px;
+    width: 160px;
+    background: rgba(23, 31, 47, 0.94);
+}
+.btn__box a {
+    display: block;
+    font-family: "Franklin Gothic Book";
+    font-size: 32px;
+    color: #e6e9e9;
+}
+/* 線(ボーダー)のスタイル 共通 */
+.btn__box:before,
+.btn__box:after,
+.btn__box a:before,
+.btn__box a:after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 1); /*線の色*/
+}
+/* 左のボーダー */
+.btn__box a:after {
+    top: -50px;
+    left: 0;
+    width: 4px;
+    height: 50px;
+}
+.btn__box a:after {
+    animation: topAnim 1.5s linear .75s infinite;
+}
+/* 各アニメーション */
+@keyframes topAnim {
+    0% {top:-80px;}
+    100% {top:80px;}
+}
